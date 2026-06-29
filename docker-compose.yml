@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  api-cicd:
+    build: .
+    container_name: api-cicd
+    ports:
+      - "3023:3023"
+    restart: always
+    environment:
+      - NODE_ENV=production

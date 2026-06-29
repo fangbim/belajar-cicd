@@ -18,5 +18,7 @@ jobs:
           script: |
             cd /var/www/belajar-cicd
             git pull origin main
-            npm install
-            pm2 restart api-cicd
+
+            pm2 delete api-cicd || true
+
+            docker-compose up -d --build
