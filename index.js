@@ -3,7 +3,7 @@ const app = express();
 const PORT = 3000;
 
 app.get('/', (req, res) => {
-    res.send('Halo World, Deploy otomatis berhasil v1.0');
+    res.send('Deploy otomatis berhasil! Ini versi 2.0 tanpa sentuh VPS');
 });
 
 app.listen(PORT, () => {
