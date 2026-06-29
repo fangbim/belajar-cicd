@@ -19,6 +19,4 @@ jobs:
             cd /var/www/belajar-cicd
             git pull origin main
 
-            pm2 delete api-cicd || true
-
-            docker-compose up -d --build
+            docker compose up -d --build
