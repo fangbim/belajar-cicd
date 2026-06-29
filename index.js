@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = 3023;
 
 app.get('/', (req, res) => {
     res.send('Deploy otomatis berhasil! Ini versi 2.0 tanpa sentuh VPS');
